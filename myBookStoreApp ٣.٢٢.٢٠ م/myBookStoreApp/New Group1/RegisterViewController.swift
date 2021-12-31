@@ -33,12 +33,30 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
-    @IBOutlet weak var addressTextField: UITextField!
+//    @IBOutlet weak var addressTextField: UITextField!
     
-    @IBOutlet weak var phoneNumberTextField: UITextField!
+//    @IBOutlet weak var phoneNumberTextField: UITextField!
     
+    
+    @IBOutlet weak var registerLabel: UILabel!
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    @IBOutlet weak var emailRegLabel: UILabel!
+    
+    @IBOutlet weak var passwordRegLabel: UILabel!
     
 
+    @IBOutlet weak var rePasswordRegLabel: UILabel!
+    
+    
+    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

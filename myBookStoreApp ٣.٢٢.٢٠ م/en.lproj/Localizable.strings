@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  myBookStoreApp
+
+  Created by Dua'a ageel on 27/05/1443 AH.
+  
+*/
+///تسجيل الدخول///
+"loginword" = "Login";
+"hi" = "Hi there! Nice to see you again";
+"email" = "Email";
+"password" = "Password";
+"login" = "Login";
+"newuser" = "Register a new user";
+"register" = "Register";
+
+
+/// تسجيل مسخدم جديد///
+"registerword" = "Register";
+"email" = "Email";
+"password" = "Password";
+"repassword" = "Re-password";
+"register" = "Register";
+"login" = "Login";
+
+///اضافة كتاب///
+"bookname" = "Book Name";
+"description" = "Description";
+"contact" = "contact me";
+"add" = "Add";
+"edit" = "Edit";
+
+
+///صفحة التفاصيل///
+"bookname" = "Book Name";
+"description" = "Description";
+"contact" = "contact me";

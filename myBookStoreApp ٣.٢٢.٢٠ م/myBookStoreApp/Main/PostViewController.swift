@@ -27,9 +27,21 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var contactUsTextView: UITextView!
     
-    
-    
     @IBOutlet weak var actionButton: UIButton!
+    
+    
+    @IBOutlet weak var bookNameLabel: UILabel!
+    
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
+    @IBOutlet weak var contactLabel: UILabel!
+    
+    
+    
+    
+    
     
     let activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {

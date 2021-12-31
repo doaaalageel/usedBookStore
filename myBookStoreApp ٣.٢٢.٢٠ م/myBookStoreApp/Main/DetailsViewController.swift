@@ -21,6 +21,17 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var contactUsLabel: UILabel!
     
+    
+    
+    @IBOutlet weak var bookNameLabel: UILabel!
+    
+    
+    @IBOutlet weak var desscriptionLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var contacttLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

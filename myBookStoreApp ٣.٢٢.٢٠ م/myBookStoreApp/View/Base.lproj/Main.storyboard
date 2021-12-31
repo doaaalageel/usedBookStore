@@ -145,20 +145,6 @@
                                 <color key="textColor" red="0.69541317650000001" green="0.22537626899999999" blue="0.079142667750000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-io-iFt">
-                                <rect key="frame" x="15" y="333" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.69541317650000001" green="0.22537626899999999" blue="0.079142667750000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone-Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-cS-F2x">
-                                <rect key="frame" x="15" y="384" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.69541317650000001" green="0.22537626899999999" blue="0.079142667750000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hW-iS-5e1">
                                 <rect key="frame" x="120" y="124" width="179" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -179,18 +165,6 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYm-St-azZ">
                                 <rect key="frame" x="120" y="279" width="179" height="34"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-XX-ITx">
-                                <rect key="frame" x="120" y="331" width="179" height="34"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRS-uA-WqH">
-                                <rect key="frame" x="120" y="382" width="179" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -234,12 +208,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="fMt-Re-Dsn"/>
                     <connections>
-                        <outlet property="addressTextField" destination="SlF-XX-ITx" id="Kt4-Lb-4j7"/>
                         <outlet property="confirmPasswordTextField" destination="OYm-St-azZ" id="K6c-gH-CrR"/>
+                        <outlet property="emailRegLabel" destination="9N3-cn-DQW" id="xKK-yp-zMx"/>
                         <outlet property="emailTextField" destination="dkA-N2-sPg" id="g7G-yQ-HAD"/>
+                        <outlet property="loginButton" destination="k3A-cl-gY8" id="Jgo-ha-yft"/>
+                        <outlet property="nameLabel" destination="ml1-Dn-sCe" id="Vk8-Lq-uXg"/>
                         <outlet property="nameTextField" destination="2hW-iS-5e1" id="sAQ-RF-uwu"/>
+                        <outlet property="passwordRegLabel" destination="2GU-4A-Pqg" id="Rhw-TU-aO3"/>
                         <outlet property="passwordTextField" destination="6BT-Mm-Y7b" id="EDu-ni-POm"/>
-                        <outlet property="phoneNumberTextField" destination="TRS-uA-WqH" id="5E1-NH-k1n"/>
+                        <outlet property="rePasswordRegLabel" destination="uU8-NZ-cTC" id="anF-KS-G13"/>
+                        <outlet property="registerButton" destination="Onw-6j-0gv" id="Vpg-cp-uN0"/>
+                        <outlet property="registerLabel" destination="RD7-7L-a5D" id="4IQ-OU-4sl"/>
                         <outlet property="userImageView" destination="ABJ-5B-oBb" id="8yC-vm-uoE"/>
                     </connections>
                 </viewController>
@@ -319,7 +298,10 @@
                     <navigationItem key="navigationItem" id="yRU-s5-ypx"/>
                     <connections>
                         <outlet property="actionButton" destination="C5J-21-lcl" id="dfu-gW-H16"/>
+                        <outlet property="bookNameLabel" destination="aIO-tT-opi" id="c0Z-M2-M8J"/>
+                        <outlet property="contactLabel" destination="dof-NR-g2C" id="cHg-IT-yLf"/>
                         <outlet property="contactUsTextView" destination="yB7-bp-8PF" id="RH1-xg-L6v"/>
+                        <outlet property="descriptionLabel" destination="TVZ-nk-VG2" id="Abe-VU-jen"/>
                         <outlet property="postDescriptionTextField" destination="flB-Ug-kqQ" id="G8y-fs-BeS"/>
                         <outlet property="postImageView" destination="9vw-0L-Y5Z" id="8FY-o7-bTP"/>
                         <outlet property="postTitleTextField" destination="VPt-ha-wfo" id="H10-gh-Tzq"/>
@@ -437,7 +419,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="DOp-L6-kDN"/>
                     <connections>
-                        <outlet property="contactUsLabel" destination="CxW-hu-rzZ" id="kpp-P1-mxw"/>
+                        <outlet property="bookNameLabel" destination="AQu-Nu-Hhm" id="7cU-N2-kck"/>
+                        <outlet property="contactUsLabel" destination="6GP-wQ-Qm1" id="0kj-de-2GZ"/>
+                        <outlet property="contacttLabel" destination="6GP-wQ-Qm1" id="I8q-Zj-klb"/>
+                        <outlet property="desscriptionLabel" destination="UWK-gc-K7Y" id="UzF-pA-UJT"/>
                         <outlet property="postDescriptionLabel" destination="ka7-IW-G6X" id="kUi-eB-BaJ"/>
                         <outlet property="postImageView" destination="XLa-p6-7Cf" id="Qz5-wU-7K2"/>
                         <outlet property="postTitleLabel" destination="Zpk-t5-qZS" id="NlB-Fv-xPf"/>
@@ -530,8 +515,8 @@
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdM-if-nUM">
-                                <rect key="frame" x="44" y="59" width="85" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdM-if-nUM">
+                                <rect key="frame" x="44" y="59" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
