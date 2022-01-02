@@ -12,27 +12,59 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     
+    
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-    @IBOutlet weak var loginnLabel: UILabel!
+    @IBOutlet weak var loginnLabel: UILabel!{
+    didSet {
+        loginnLabel.text = "loginword".localized
+    }
+    }
+    @IBOutlet weak var massageLoginLabel: UILabel! {
+        didSet {
+            massageLoginLabel.text = "hi".localized
+        }
+    }
     
-    @IBOutlet weak var massageLoginLabel: UILabel!
     
+    @IBOutlet weak var emailLabel: UILabel!{
+        didSet {
+            emailLabel.text = "email".localized
+        }
+    }
     
-    @IBOutlet weak var emailLabel: UILabel!
-    
-    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!{
+        didSet {
+            passwordLabel.text = "password".localized
+        }
+    }
     
     @IBOutlet weak var loginButton: UIButton!
+    {
+        didSet {
+            loginButton.setTitle(NSLocalizedString("login", tableName: "Localizable", comment: ""), for: .normal)
+        }
+        
+    }
+        
     
     
-    @IBOutlet weak var newUserLabel: UILabel!
+    @IBOutlet weak var newUserLabel: UILabel!{
+        didSet {
+            newUserLabel.text = "newuser".localized
+        }
+    }
     
     
     @IBOutlet weak var registerButton: UIButton!
     
-    
+    {
+        didSet {
+            registerButton.setTitle(NSLocalizedString("register", tableName: "Localizable", comment: ""), for: .normal)
+        }
+        
+    }
     
     
     var activityIndicator = UIActivityIndicatorView()

@@ -17,6 +17,7 @@
 
 /// تسجيل مسخدم جديد///
 "registerword" = "Register";
+"name" = "Name";
 "email" = "Email";
 "password" = "Password";
 "repassword" = "Re-password";

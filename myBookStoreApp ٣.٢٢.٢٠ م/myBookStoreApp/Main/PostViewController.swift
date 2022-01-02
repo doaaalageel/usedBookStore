@@ -27,16 +27,33 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var contactUsTextView: UITextView!
     
-    @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var actionButton: UIButton!{
+    didSet {
+        actionButton.setTitle("add".localized, for: .normal)
+    }
+    }
     
-    
-    @IBOutlet weak var bookNameLabel: UILabel!
+    @IBOutlet weak var bookNameLabel: UILabel!{
+        didSet {
+            bookNameLabel.text = "bookname".localized
+        }
+    }
     
     
     @IBOutlet weak var descriptionLabel: UILabel!
+        {
+            didSet {
+                descriptionLabel.text = "description".localized
+            }
+        
+    }
     
     
-    @IBOutlet weak var contactLabel: UILabel!
+    @IBOutlet weak var contactLabel: UILabel! {
+        didSet {
+            contactLabel.text = "contact".localized
+        }
+    }
     
     
     
@@ -53,11 +70,11 @@ class PostViewController: UIViewController {
             postDescriptionTextField.text = selectedPost.description
             contactUsTextView.text = selectedPost.contact
             postImageView.image = selectedImage
-            actionButton.setTitle("Update Book", for: .normal)
+            actionButton.setTitle("edit".localized, for: .normal)
             let deleteBarButton = UIBarButtonItem(image: UIImage(systemName: "trash.fill"), style: .plain, target: self, action: #selector(handleDelete))
             self.navigationItem.rightBarButtonItem = deleteBarButton
         }else {
-            actionButton.setTitle("Add Book", for: .normal)
+            actionButton.setTitle("add".localized, for: .normal)
             self.navigationItem.rightBarButtonItem = nil
             
         }

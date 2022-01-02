@@ -15,22 +15,40 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var postImageView: UIImageView!
     
     @IBOutlet weak var postTitleLabel: UILabel!
+       
     
     
     @IBOutlet weak var postDescriptionLabel: UILabel!
+        
+        
+    
     
     @IBOutlet weak var contactUsLabel: UILabel!
+     
+    
+    
+    @IBOutlet weak var bookNameLabel: UILabel!{
+        didSet {
+            bookNameLabel.text = "bookname".localized
+        }
+    }
     
     
     
-    @IBOutlet weak var bookNameLabel: UILabel!
+    @IBOutlet weak var desscriptionLabel: UILabel!{
+        didSet {
+            desscriptionLabel.text = "description".localized
+        }
+    }
     
     
-    @IBOutlet weak var desscriptionLabel: UILabel!
     
-    
-    
-    @IBOutlet weak var contacttLabel: UILabel!
+    @IBOutlet weak var contacttLabel: UILabel!{
+        
+        didSet {
+            contacttLabel.text = "contact".localized
+        }
+    }
     
 
     override func viewDidLoad() {

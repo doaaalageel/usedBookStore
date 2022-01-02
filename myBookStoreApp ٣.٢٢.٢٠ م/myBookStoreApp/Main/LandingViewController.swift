@@ -8,6 +8,44 @@
 import UIKit
 
 class LandingViewController: UIViewController {
+    
+    @IBOutlet weak var changeLanguge: UISegmentedControl!
+    {
+        didSet {
+        if let lang = UserDefaults.standard.string(forKey: "currentLanguage") {
+            switch lang {
+            case "ar":
+                changeLanguge.selectedSegmentIndex = 1
+            case "en":
+                
+                changeLanguge.selectedSegmentIndex = 0
+            
+            default:
+                let localLang =  Locale.current.languageCode
+                 if localLang == "en" {
+                     changeLanguge.selectedSegmentIndex = 0
+                     
+                 } else {
+                     changeLanguge.selectedSegmentIndex = 1
+                 }
+              
+            }
+        
+        }else {
+            let localLang =  Locale.current.languageCode
+            UserDefaults.standard.setValue([localLang], forKey: "AppleLanguages")
+             if localLang == "en" {
+                 changeLanguge.selectedSegmentIndex = 0
+             } else {
+                 changeLanguge.selectedSegmentIndex = 1
+             }
+        }
+    }
+    }
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +53,36 @@ class LandingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeLanguageAction(_ sender: UISegmentedControl) {
+        if let lang = sender.titleForSegment(at:sender.selectedSegmentIndex)?.lowercased() {
+            if lang == "ar"{
+               
+             
+                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            }else{
+                UIView.appearance().semanticContentAttribute = .forceLeftToRight
+            }
+            UserDefaults.standard.set(lang, forKey: "currentLanguage")
+            Bundle.setLanguage(lang)
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+               let sceneDelegate = windowScene.delegate as? SceneDelegate {
+                sceneDelegate.window?.rootViewController = storyboard.instantiateInitialViewController()
+                
+            }
+        }
+    
     }
-    */
+    
 
+}
+
+
+extension String {
+    var localized: String {
+
+        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
+        
+       
+    }
 }
