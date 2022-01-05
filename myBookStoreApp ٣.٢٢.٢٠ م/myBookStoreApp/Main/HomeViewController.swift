@@ -10,6 +10,15 @@ import Firebase
 
 class HomeViewController: UIViewController {
     
+    
+    @IBOutlet weak var logoutOutlet: UIBarButtonItem!
+   
+
+      
+    
+    
+    
+    
     var posts = [Post]()
     var selectedPost:Post?
     var selectedPostImage:UIImage?
@@ -21,6 +30,9 @@ class HomeViewController: UIViewController {
             postsTableView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "PostCell")
         }
     }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -147,4 +159,17 @@ extension HomeViewController: UITableViewDelegate {
 
 
 
-
+//
+//extension UIColor {
+//    
+//   static func setColor(lightColor: UIColor, darkColor: UIColor) -> UIColor {
+//        if #available(iOS 13, *) {
+//            return UIColor{ (traitCollection) -> UIColor in
+//                return traitCollection.userInterfaceStyle == .light ? lightColor : darkColor
+//            }
+//        } else {
+//            return lightColor
+//        }
+//    }
+//    
+//}

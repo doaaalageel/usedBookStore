@@ -54,13 +54,13 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailRegLabel: UILabel! {
         didSet {
-            emailRegLabel.text = "password".localized
+            emailRegLabel.text = "email".localized
         }
     }
     
     @IBOutlet weak var passwordRegLabel: UILabel!{
         didSet {
-            passwordRegLabel.text = "email".localized
+            passwordRegLabel.text = "password".localized
         }
     }
     
