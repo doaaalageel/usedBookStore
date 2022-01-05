@@ -32,6 +32,7 @@
 		A76056E22774B14C00B0AD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76056E02774B14C00B0AD3E /* Main.storyboard */; };
 		A76056E42774B15100B0AD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76056E32774B15100B0AD3E /* Assets.xcassets */; };
 		A76056E72774B15100B0AD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76056E52774B15100B0AD3E /* LaunchScreen.storyboard */; };
+		A7DD8E5D27857BB100A538FE /* MyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD8E5C27857BB100A538FE /* MyBooksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		A76056E32774B15100B0AD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76056E62774B15100B0AD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A76056E82774B15100B0AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DD8E5C27857BB100A538FE /* MyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		4DE0902B277BD0AB00DA7C4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD8E5C27857BB100A538FE /* MyBooksViewController.swift */,
 				A73020702781838D00470AE8 /* BundleExtention.swift */,
 				A76056DE2774B14C00B0AD3E /* ViewController.swift */,
 				4D8CD868277BD81100385785 /* Activity.swift */,
@@ -239,6 +242,7 @@
 				4D8CD871277BD81200385785 /* PostCell.swift in Sources */,
 				A72EC593277861E800F4AE3E /* LoginViewController.swift in Sources */,
 				4D8CD875277BD81200385785 /* DetailsViewController.swift in Sources */,
+				A7DD8E5D27857BB100A538FE /* MyBooksViewController.swift in Sources */,
 				4D8CD87A277BD81200385785 /* HomeViewController.swift in Sources */,
 				A76056DF2774B14C00B0AD3E /* ViewController.swift in Sources */,
 				4D8CD874277BD81200385785 /* PostViewController.swift in Sources */,
