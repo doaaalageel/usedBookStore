@@ -90,7 +90,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="aK1-Ma-WF9"/>
                     <navigationItem key="navigationItem" title="Book Store" id="pCP-nQ-UeN">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="f8g-IO-uuZ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" image="clear.fill" catalog="system" id="f8g-IO-uuZ">
                             <connections>
                                 <action selector="handleLogout:" destination="1yP-RG-XBb" id="Zfr-RF-Gii"/>
                             </connections>
@@ -640,7 +640,7 @@
             </objects>
             <point key="canvasLocation" x="572" y="146"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="M4o-iG-AGA">
             <objects>
                 <viewController id="Gbq-uH-ycu" sceneMemberID="viewController">
@@ -661,7 +661,7 @@
                             <constraint firstItem="ah4-YE-xP5" firstAttribute="trailing" secondItem="urr-yX-qWZ" secondAttribute="trailing" id="PlM-DL-IUM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person.fill.questionmark" catalog="system" id="8bO-zf-iLe"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill.questionmark.ar" catalog="system" id="8bO-zf-iLe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfL-xb-yJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -676,10 +676,11 @@
     <resources>
         <image name="IMG.png" width="1096" height="2092"/>
         <image name="book" catalog="system" width="128" height="99"/>
+        <image name="clear.fill" catalog="system" width="128" height="114"/>
         <image name="hammer.fill" catalog="system" width="128" height="117"/>
         <image name="image upload" width="225" height="225"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
+        <image name="person.fill.questionmark.ar" catalog="system" width="128" height="102"/>
         <image name="techsupport" width="1563" height="3000"/>
         <image name="v2" width="1563" height="3000"/>
         <systemColor name="secondarySystemBackgroundColor">
