@@ -11,7 +11,16 @@ class PostCell: UITableViewCell {
     
     
     @IBOutlet weak var postImageView: UIImageView!
-    
+    {
+        didSet{
+            postImageView.layer.masksToBounds = false
+            postImageView.layer.shadowColor = UIColor.black.cgColor
+            postImageView.layer.shadowOpacity = 0.8
+            postImageView.layer.shadowRadius = 10
+            postImageView.layer.shadowOffset = CGSize(width: 0 , height: 0)
+
+        }
+    }
     @IBOutlet weak var userNameLabel: UILabel!
     
     @IBOutlet weak var postTitleLabel: UILabel!
@@ -20,6 +29,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var postDescriptionLabel: UILabel!
     
     @IBOutlet weak var userImageView: UIImageView!
+
     
 
     override func awakeFromNib() {

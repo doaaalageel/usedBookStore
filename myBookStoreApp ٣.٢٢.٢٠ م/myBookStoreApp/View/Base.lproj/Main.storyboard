@@ -126,7 +126,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ABJ-5B-oBb">
                                         <rect key="frame" x="0.0" y="1.5" width="280" height="47"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="jKj-ha-F7n"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jKj-ha-F7n"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eO8-hy-SfB">
@@ -473,10 +473,10 @@
                             <constraint firstAttribute="trailing" secondItem="ebt-jL-15I" secondAttribute="trailing" id="4iY-Y7-GKL"/>
                             <constraint firstItem="Gd7-CM-8lE" firstAttribute="leading" secondItem="zwK-hY-vLd" secondAttribute="leading" constant="124" id="CeW-PI-JYs"/>
                             <constraint firstAttribute="bottom" secondItem="ebt-jL-15I" secondAttribute="bottom" id="FeP-gT-vDY"/>
+                            <constraint firstItem="zwK-hY-vLd" firstAttribute="bottom" secondItem="Gd7-CM-8lE" secondAttribute="bottom" constant="123" id="I63-UC-MbT"/>
                             <constraint firstAttribute="top" secondItem="ebt-jL-15I" secondAttribute="top" id="IBo-Ye-ubN"/>
                             <constraint firstItem="ebt-jL-15I" firstAttribute="leading" secondItem="JbX-Jo-B7y" secondAttribute="leading" id="Qos-YP-qn5"/>
                             <constraint firstItem="Gd7-CM-8lE" firstAttribute="centerX" secondItem="zwK-hY-vLd" secondAttribute="centerX" id="Smf-MY-rr0"/>
-                            <constraint firstItem="Gd7-CM-8lE" firstAttribute="top" secondItem="zwK-hY-vLd" secondAttribute="top" constant="316" id="vas-p3-Ayp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bgw-ru-TYJ"/>

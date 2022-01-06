@@ -22,7 +22,6 @@ class DetailsViewController: UIViewController {
         
         
     
-    
     @IBOutlet weak var contactUsLabel: UILabel!
      
     

@@ -13,8 +13,8 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var userImageView: UIImageView! {
         didSet {
-            userImageView.layer.borderColor = UIColor.systemGreen.cgColor
-            userImageView.layer.borderWidth = 3.0
+//            userImageView.layer.borderColor = UIColor.systemGreen.cgColor
+//            userImageView.layer.borderWidth = 3.0
             userImageView.layer.cornerRadius = userImageView.bounds.height / 2
             userImageView.layer.masksToBounds = true
             userImageView.isUserInteractionEnabled = true
@@ -92,7 +92,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagePickerController.delegate = self
     }
     
     @IBAction func handleRegister(_ sender: Any)
