@@ -14,6 +14,12 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var passwordTextField: UITextField!
+    {
+            didSet{
+                passwordTextField.isSecureTextEntry = true
+            }
+        }
+    
     
     
     @IBOutlet weak var loginnLabel: UILabel!{

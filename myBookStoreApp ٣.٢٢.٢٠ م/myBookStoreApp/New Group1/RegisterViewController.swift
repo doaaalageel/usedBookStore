@@ -29,9 +29,19 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
+    {
+            didSet{
+                passwordTextField.isSecureTextEntry = true
+            }
+        }
     
     
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    {
+            didSet{
+                confirmPasswordTextField.isSecureTextEntry = true
+            }
+        }
     
 //    @IBOutlet weak var addressTextField: UITextField!
     
