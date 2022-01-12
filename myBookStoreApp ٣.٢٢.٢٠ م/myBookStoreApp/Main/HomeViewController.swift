@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 
+
 class HomeViewController: UIViewController {
     
     
@@ -38,6 +39,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         getPosts()
 
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
        
     }
     
