@@ -44,7 +44,14 @@ class LandingViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var startButton: UIButton!
     
+    {
+        didSet {
+            startButton.setTitle(NSLocalizedString("start", tableName: "Localizable", comment: ""), for: .normal)
+        }
+        
+    }
     
 
     override func viewDidLoad() {
