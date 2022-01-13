@@ -1,1 +1,25 @@
 # usedBookStore
+
+## Description
+- It is a mobile application through which you can add your used books and publish them through the application, and you can also take any book in the application by communicating with the book publisher
+
+## Demo
+![](LightMode.gif)
+![](DarkMode.gif)
+
+## user Stories 
+![](User Story.png)
+
+
+## Framework
+- UIKit
+- Firebase
+- Foundation
+
+## ERD
+![](ERD.png)
+
+## Wireframe
+![](Wireframe.png)
+
+

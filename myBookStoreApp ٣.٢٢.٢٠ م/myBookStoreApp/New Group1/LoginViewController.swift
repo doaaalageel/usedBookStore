@@ -12,13 +12,18 @@ import Firebase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    
+    {
+    didSet {
+        emailTextField.delegate = self
+    }
+    }
     
     @IBOutlet weak var passwordTextField: UITextField!
     {
             didSet{
-                passwordTextField.isSecureTextEntry = true
+                passwordTextField.delegate = self
             }
+        
         }
     
     
@@ -106,7 +111,12 @@ class LoginViewController: UIViewController {
     
 }
     
-    
+extension UIViewController: UITextFieldDelegate{
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+}
 
 
 

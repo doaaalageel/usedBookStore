@@ -22,10 +22,17 @@ class PostViewController: UIViewController {
     
     
     @IBOutlet weak var postTitleTextField: UITextField!
+    {
+        didSet {
+            postTitleTextField.delegate = self
+        }
+    }
     
     @IBOutlet weak var postDescriptionTextField: UITextView!
-    
+   
+
     @IBOutlet weak var contactUsTextView: UITextView!
+    
     
     @IBOutlet weak var actionButton: UIButton!{
     didSet {

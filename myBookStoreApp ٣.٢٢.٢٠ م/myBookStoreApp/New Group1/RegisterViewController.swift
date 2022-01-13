@@ -25,13 +25,22 @@ class RegisterViewController: UIViewController {
     }
     
     @IBOutlet weak var nameTextField: UITextField!
+   {
+       didSet {
+           nameTextField.delegate = self
+    }    }
     
     @IBOutlet weak var emailTextField: UITextField!
+    {
+        didSet {
+            emailTextField.delegate = self
+     }    }
+   
     
     @IBOutlet weak var passwordTextField: UITextField!
     {
             didSet{
-                passwordTextField.isSecureTextEntry = true
+                passwordTextField.delegate = self
             }
         }
     
@@ -39,7 +48,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     {
             didSet{
-                confirmPasswordTextField.isSecureTextEntry = true
+                confirmPasswordTextField.delegate = self
             }
         }
     

@@ -15,11 +15,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var logoutOutlet: UIBarButtonItem!
    
 
-      
-    
-    
-    
-    
     var posts = [Post]()
     var selectedPost:Post?
     var selectedPostImage:UIImage?
@@ -39,9 +34,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         getPosts()
 
-        
-        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
-       
+
     }
     
     func getPosts() {
@@ -162,7 +155,7 @@ extension HomeViewController: UITableViewDelegate {
 
 
 
-//
+
 //extension UIColor {
 //    
 //   static func setColor(lightColor: UIColor, darkColor: UIColor) -> UIColor {
